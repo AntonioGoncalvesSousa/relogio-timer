@@ -10,7 +10,6 @@ function plotarTempo(){
     blocoSeTempo[0].innerHTML = hora;
     blocoSeTempo[1].innerHTML = minuto;
     blocoSeTempo[2].innerHTML = segundo;
-
 }
 
 setInterval(plotarTempo, 1000);
