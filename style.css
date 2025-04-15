@@ -80,6 +80,23 @@
     background-color: rgb(107, 107, 107);
 }
 
+.button-timer {
+    width: 13%;
+    height: 80%;
+    background-color: rgb(182, 182, 182);
+    border-radius: 50px;
+    font-size: 1.1rem;
+    color: black;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    margin: 0px 10px;
+}
+
+.button-timer:hover{
+    background-color: rgb(107, 107, 107);
+}
+
 .bar {
     font-size: 3rem;
     display: flex;
@@ -97,16 +114,16 @@
     display: none;
 }
 
-.button .icon-pause {
+.button-timer .icon-pause {
     display: none;
 }
 .icon-play {
     display: inline;
 }
 
-.button.stop .icon-play {
+.button-timer.stop .icon-play {
     display: none;
 }
-.button.stop .icon-pause {
+.button-timer.stop .icon-pause {
     display: inline;
 }

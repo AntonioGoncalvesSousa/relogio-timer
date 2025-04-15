@@ -6,8 +6,10 @@ let startTime = 0;
 let tempoAnterior = 0;
 let intervalo;
 
-function startTimer(button) {
-    button.classList.toggle('stop');
+function startTimer(button, isRunning) {
+    if (isRunning) {
+        button.classList.toggle('stop');
+    }
 
     if (button.classList.contains('stop')) {
         // TIMER RODANDO
@@ -29,5 +31,20 @@ function startTimer(button) {
         // TIMER PARADO
         clearInterval(intervalo);
         tempoAnterior = performance.now() - startTime;
+    }
+}
+
+function resetTimer() {
+    clearInterval(intervalo); 
+    tempoAnterior = 0;        
+    startTime = 0;            
+
+    minutoDisplay.innerHTML = '00';
+    segundoDisplay.innerHTML = '00';
+    milisegundoDisplay.innerHTML = '000';
+    
+    const button = document.querySelector('.button-timer');
+    if (button.classList.contains('stop')) {
+        startTimer(button, false); 
     }
 }
