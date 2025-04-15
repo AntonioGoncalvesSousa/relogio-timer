@@ -88,3 +88,25 @@
     align-items: center;
     color: rgb(0, 32, 138);
 }
+
+.bx, .bx-pause{
+    display: none;
+}
+
+.active{
+    display: none;
+}
+
+.button .icon-pause {
+    display: none;
+}
+.icon-play {
+    display: inline;
+}
+
+.button.stop .icon-play {
+    display: none;
+}
+.button.stop .icon-pause {
+    display: inline;
+}

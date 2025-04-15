@@ -1,3 +1,4 @@
+// RELOGIO
 const blocoSeTempo = document.querySelectorAll('.time');
 
 function plotarTempo(){
